@@ -1,0 +1,6 @@
+CDU = input()
+CDU = int(CDU)
+C = int(CDU // 100)
+D = int(CDU % 100 // 10)
+U = int(CDU % 100 % 10) 
+print(U, D, C)
