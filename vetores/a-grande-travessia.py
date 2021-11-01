@@ -1,8 +1,8 @@
-todos = map(int, input().split())
-pares = []
 
-for n in todos:
-    if n % 2 == 0:
-        pares.append(n)
-
-print(pares)
+for i in range(2, 101):
+    prime = True
+    for j in range(2, i):
+        if (i % j == 0):
+            prime = False
+    if prime:
+        print(i, end=" ")
